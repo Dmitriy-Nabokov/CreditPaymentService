@@ -3,7 +3,7 @@ public class Main {
 
         MonthlySettlement service = new MonthlySettlement();
 
-        int sum = 1_000_000;   //Сумма кредита
+        int CreditSum = 1_000_000;   //Сумма кредита
 
         int months1 = 12;       //Количество месяцев
         int months2 = 24;       //Количество месяцев
@@ -11,12 +11,12 @@ public class Main {
 
         double rate = 9.99;     //Процентная ставка
 
-        double payment1 = service.calculate1(sum, months1, rate);
-        double payment2 = service.calculate2(sum, months2, rate);
-        double payment3 = service.calculate3(sum, months3, rate);
+        double payment1 = service.calculate1(CreditSum, months1, rate);
+        double payment2 = service.calculate2(CreditSum, months2, rate);
+        double payment3 = service.calculate3(CreditSum, months3, rate);
 
         System.out.println();
-        System.out.println("Сумма кредита: " + sum + " Руб");
+        System.out.println("Сумма кредита: " + CreditSum + " Руб");
 
         System.out.printf("Процентная ставка: " + rate + "%%");
         System.out.println();
